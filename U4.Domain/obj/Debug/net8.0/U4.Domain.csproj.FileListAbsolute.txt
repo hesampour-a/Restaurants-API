@@ -1,0 +1,12 @@
+I:\PRJ\Asp .net\U4\U4.Domain\bin\Debug\net8.0\U4.Domain.deps.json
+I:\PRJ\Asp .net\U4\U4.Domain\bin\Debug\net8.0\U4.Domain.dll
+I:\PRJ\Asp .net\U4\U4.Domain\bin\Debug\net8.0\U4.Domain.pdb
+I:\PRJ\Asp .net\U4\U4.Domain\obj\Debug\net8.0\U4.Domain.GeneratedMSBuildEditorConfig.editorconfig
+I:\PRJ\Asp .net\U4\U4.Domain\obj\Debug\net8.0\U4.Domain.AssemblyInfoInputs.cache
+I:\PRJ\Asp .net\U4\U4.Domain\obj\Debug\net8.0\U4.Domain.AssemblyInfo.cs
+I:\PRJ\Asp .net\U4\U4.Domain\obj\Debug\net8.0\U4.Domain.csproj.CoreCompileInputs.cache
+I:\PRJ\Asp .net\U4\U4.Domain\obj\Debug\net8.0\U4.Domain.dll
+I:\PRJ\Asp .net\U4\U4.Domain\obj\Debug\net8.0\refint\U4.Domain.dll
+I:\PRJ\Asp .net\U4\U4.Domain\obj\Debug\net8.0\U4.Domain.pdb
+I:\PRJ\Asp .net\U4\U4.Domain\obj\Debug\net8.0\ref\U4.Domain.dll
+I:\PRJ\Asp .net\U4\U4.Domain\obj\Debug\net8.0\U4.Domain.csproj.AssemblyReference.cache

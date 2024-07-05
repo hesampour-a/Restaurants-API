@@ -1,0 +1,133 @@
+2024-07-04 09:21:15.651 +03:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-07-04 09:21:15.788 +03:30 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2024-07-04 09:21:15.806 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-04 09:21:17.901 +03:30 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-04 09:21:18.565 +03:30 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-07-04 09:21:18.629 +03:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-07-04 09:21:18.697 +03:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = N'admin4@test.com') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-07-04 09:21:19.151 +03:30 [INF] HTTP GET /swagger/index.html responded 200 in 144.9382 ms
+2024-07-04 09:21:19.741 +03:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 193.0616 ms
+2024-07-04 09:21:37.467 +03:30 [INF] HTTP GET /api/Restaurant responded 401 in 10.8253 ms
+2024-07-04 09:22:09.183 +03:30 [INF] HTTP GET /api/Restaurant responded 401 in 23.4188 ms
+2024-07-04 09:24:49.180 +03:30 [INF] HTTP GET /api/Restaurant responded 401 in 9.3448 ms
+2024-07-04 09:25:01.227 +03:30 [INF] HTTP GET /api/Restaurant responded 401 in 0.1691 ms
+2024-07-04 09:25:02.150 +03:30 [INF] HTTP GET /api/Restaurant responded 401 in 0.1411 ms
+2024-07-04 09:25:11.177 +03:30 [INF] HTTP GET /api/Restaurant responded 401 in 0.1176 ms
+2024-07-04 09:25:12.068 +03:30 [INF] HTTP GET /api/Restaurant responded 401 in 0.2749 ms
+2024-07-04 09:25:13.946 +03:30 [INF] HTTP GET /swagger/index.html responded 200 in 9.6491 ms
+2024-07-04 09:25:14.242 +03:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 32.3489 ms
+2024-07-04 09:25:27.460 +03:30 [INF] HTTP GET /api/Restaurant responded 401 in 0.1838 ms
+2024-07-04 09:25:29.260 +03:30 [INF] HTTP GET /api/Restaurant responded 401 in 1.7092 ms
+2024-07-04 09:26:39.720 +03:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-07-04 09:26:39.862 +03:30 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2024-07-04 09:26:39.877 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-04 09:26:40.449 +03:30 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-04 09:26:40.803 +03:30 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-07-04 09:26:40.838 +03:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-07-04 09:26:40.889 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = N'admin4@test.com') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-07-04 09:26:42.663 +03:30 [INF] HTTP GET /swagger/index.html responded 200 in 82.1369 ms
+2024-07-04 09:26:43.099 +03:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 133.1206 ms
+2024-07-04 09:27:01.801 +03:30 [INF] Getting All Restaurants
+2024-07-04 09:27:01.871 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Restaurants] AS [r]
+2024-07-04 09:27:01.892 +03:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-07-04 09:27:01.895 +03:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-07-04 09:27:02.269 +03:30 [INF] Executed DbCommand (177ms) [Parameters=[@__p_0='0', @__p_1='5'], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Category], [t].[ContactEmail], [t].[ContactNumber], [t].[Description], [t].[HasDelivery], [t].[Name], [t].[OwnerId], [t].[Address_City], [t].[Address_PostalCode], [t].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[ResaurantId]
+FROM (
+    SELECT [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[OwnerId], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Dishes] AS [d] ON [t].[Id] = [d].[ResaurantId]
+ORDER BY [t].[Id]
+2024-07-04 09:27:02.431 +03:30 [INF] HTTP GET /api/Restaurant responded 200 in 9709.9031 ms
+2024-07-04 09:27:22.184 +03:30 [INF] Getting All Restaurants
+2024-07-04 09:27:22.248 +03:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Restaurants] AS [r]
+2024-07-04 09:27:22.254 +03:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-07-04 09:27:22.256 +03:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-07-04 09:27:22.283 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='2'], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Category], [t].[ContactEmail], [t].[ContactNumber], [t].[Description], [t].[HasDelivery], [t].[Name], [t].[OwnerId], [t].[Address_City], [t].[Address_PostalCode], [t].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[ResaurantId]
+FROM (
+    SELECT [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[OwnerId], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+) AS [t]
+LEFT JOIN [Dishes] AS [d] ON [t].[Id] = [d].[ResaurantId]
+ORDER BY [t].[Id]
+2024-07-04 09:27:22.289 +03:30 [INF] HTTP GET /api/Restaurant responded 200 in 113.3819 ms
+2024-07-04 09:27:37.109 +03:30 [INF] Getting All Restaurants
+2024-07-04 09:27:37.119 +03:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Restaurants] AS [r]
+2024-07-04 09:27:37.127 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='10'], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Category], [t].[ContactEmail], [t].[ContactNumber], [t].[Description], [t].[HasDelivery], [t].[Name], [t].[OwnerId], [t].[Address_City], [t].[Address_PostalCode], [t].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[ResaurantId]
+FROM (
+    SELECT [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[OwnerId], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+) AS [t]
+LEFT JOIN [Dishes] AS [d] ON [t].[Id] = [d].[ResaurantId]
+ORDER BY [t].[Id]
+2024-07-04 09:27:37.130 +03:30 [INF] HTTP GET /api/Restaurant responded 200 in 24.6415 ms
+2024-07-04 09:27:50.518 +03:30 [INF] Getting All Restaurants
+2024-07-04 09:27:50.530 +03:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Restaurants] AS [r]
+2024-07-04 09:27:50.543 +03:30 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='0', @__p_1='10'], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Category], [t].[ContactEmail], [t].[ContactNumber], [t].[Description], [t].[HasDelivery], [t].[Name], [t].[OwnerId], [t].[Address_City], [t].[Address_PostalCode], [t].[Address_Street], [d].[Id], [d].[Description], [d].[KiloCalories], [d].[Name], [d].[Price], [d].[ResaurantId]
+FROM (
+    SELECT [r].[Id], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Description], [r].[HasDelivery], [r].[Name], [r].[OwnerId], [r].[Address_City], [r].[Address_PostalCode], [r].[Address_Street]
+    FROM [Restaurants] AS [r]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t]
+LEFT JOIN [Dishes] AS [d] ON [t].[Id] = [d].[ResaurantId]
+ORDER BY [t].[Id]
+2024-07-04 09:27:50.549 +03:30 [INF] HTTP GET /api/Restaurant responded 200 in 31.9397 ms

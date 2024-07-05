@@ -1,0 +1,142 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "I:\\PRJ\\Asp .net\\U4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2F054CD9-79C6-47ED-89DE-8C5772D503DB}|U4.API\\U4.API.csproj|i:\\prj\\asp .net\\u4\\u4.api\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F054CD9-79C6-47ED-89DE-8C5772D503DB}|U4.API\\U4.API.csproj|solutionrelative:u4.api\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F688CF24-AF9A-4E33-ACA1-E90CDC8CF93D}|U4.Application\\U4.Application.csproj|i:\\prj\\asp .net\\u4\\u4.application\\restaurants\\queries\\getallrestaurants\\getallrestaurantsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F688CF24-AF9A-4E33-ACA1-E90CDC8CF93D}|U4.Application\\U4.Application.csproj|solutionrelative:u4.application\\restaurants\\queries\\getallrestaurants\\getallrestaurantsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F688CF24-AF9A-4E33-ACA1-E90CDC8CF93D}|U4.Application\\U4.Application.csproj|i:\\prj\\asp .net\\u4\\u4.application\\restaurants\\queries\\getallrestaurants\\getallrestaurantsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F688CF24-AF9A-4E33-ACA1-E90CDC8CF93D}|U4.Application\\U4.Application.csproj|solutionrelative:u4.application\\restaurants\\queries\\getallrestaurants\\getallrestaurantsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EBAD6D1-7C6F-4EA0-AE8B-E4AB4803C6EC}|U4.Infrastructure\\U4.Infrastructure.csproj|i:\\prj\\asp .net\\u4\\u4.infrastructure\\repositories\\restaurantsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EBAD6D1-7C6F-4EA0-AE8B-E4AB4803C6EC}|U4.Infrastructure\\U4.Infrastructure.csproj|solutionrelative:u4.infrastructure\\repositories\\restaurantsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451D9AEE-6F17-47AE-9985-331A4FE7EB4B}|U4.Domain\\U4.Domain.csproj|i:\\prj\\asp .net\\u4\\u4.domain\\repositories\\irestaurantsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451D9AEE-6F17-47AE-9985-331A4FE7EB4B}|U4.Domain\\U4.Domain.csproj|solutionrelative:u4.domain\\repositories\\irestaurantsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F688CF24-AF9A-4E33-ACA1-E90CDC8CF93D}|U4.Application\\U4.Application.csproj|i:\\prj\\asp .net\\u4\\u4.application\\common\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F688CF24-AF9A-4E33-ACA1-E90CDC8CF93D}|U4.Application\\U4.Application.csproj|solutionrelative:u4.application\\common\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F054CD9-79C6-47ED-89DE-8C5772D503DB}|U4.API\\U4.API.csproj|i:\\prj\\asp .net\\u4\\u4.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F054CD9-79C6-47ED-89DE-8C5772D503DB}|U4.API\\U4.API.csproj|solutionrelative:u4.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RestaurantsRepository.cs",
+              "DocumentMoniker": "I:\\PRJ\\Asp .net\\U4\\U4.Infrastructure\\Repositories\\RestaurantsRepository.cs",
+              "RelativeDocumentMoniker": "U4.Infrastructure\\Repositories\\RestaurantsRepository.cs",
+              "ToolTip": "I:\\PRJ\\Asp .net\\U4\\U4.Infrastructure\\Repositories\\RestaurantsRepository.cs",
+              "RelativeToolTip": "U4.Infrastructure\\Repositories\\RestaurantsRepository.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T04:30:06.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IRestaurantsRepository.cs",
+              "DocumentMoniker": "I:\\PRJ\\Asp .net\\U4\\U4.Domain\\Repositories\\IRestaurantsRepository.cs",
+              "RelativeDocumentMoniker": "U4.Domain\\Repositories\\IRestaurantsRepository.cs",
+              "ToolTip": "I:\\PRJ\\Asp .net\\U4\\U4.Domain\\Repositories\\IRestaurantsRepository.cs",
+              "RelativeToolTip": "U4.Domain\\Repositories\\IRestaurantsRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T04:27:50.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetAllRestaurantsQueryHandler.cs",
+              "DocumentMoniker": "I:\\PRJ\\Asp .net\\U4\\U4.Application\\Restaurants\\Queries\\GetAllRestaurants\\GetAllRestaurantsQueryHandler.cs",
+              "RelativeDocumentMoniker": "U4.Application\\Restaurants\\Queries\\GetAllRestaurants\\GetAllRestaurantsQueryHandler.cs",
+              "ToolTip": "I:\\PRJ\\Asp .net\\U4\\U4.Application\\Restaurants\\Queries\\GetAllRestaurants\\GetAllRestaurantsQueryHandler.cs",
+              "RelativeToolTip": "U4.Application\\Restaurants\\Queries\\GetAllRestaurants\\GetAllRestaurantsQueryHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T04:24:46.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetAllRestaurantsQuery.cs",
+              "DocumentMoniker": "I:\\PRJ\\Asp .net\\U4\\U4.Application\\Restaurants\\Queries\\GetAllRestaurants\\GetAllRestaurantsQuery.cs",
+              "RelativeDocumentMoniker": "U4.Application\\Restaurants\\Queries\\GetAllRestaurants\\GetAllRestaurantsQuery.cs",
+              "ToolTip": "I:\\PRJ\\Asp .net\\U4\\U4.Application\\Restaurants\\Queries\\GetAllRestaurants\\GetAllRestaurantsQuery.cs",
+              "RelativeToolTip": "U4.Application\\Restaurants\\Queries\\GetAllRestaurants\\GetAllRestaurantsQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T04:23:59.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RestaurantController.cs",
+              "DocumentMoniker": "I:\\PRJ\\Asp .net\\U4\\U4.API\\Controllers\\RestaurantController.cs",
+              "RelativeDocumentMoniker": "U4.API\\Controllers\\RestaurantController.cs",
+              "ToolTip": "I:\\PRJ\\Asp .net\\U4\\U4.API\\Controllers\\RestaurantController.cs",
+              "RelativeToolTip": "U4.API\\Controllers\\RestaurantController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABMAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T04:23:28.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PagedResult.cs",
+              "DocumentMoniker": "I:\\PRJ\\Asp .net\\U4\\U4.Application\\Common\\PagedResult.cs",
+              "RelativeDocumentMoniker": "U4.Application\\Common\\PagedResult.cs",
+              "ToolTip": "I:\\PRJ\\Asp .net\\U4\\U4.Application\\Common\\PagedResult.cs",
+              "RelativeToolTip": "U4.Application\\Common\\PagedResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T04:53:27.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "I:\\PRJ\\Asp .net\\U4\\U4.API\\Program.cs",
+              "RelativeDocumentMoniker": "U4.API\\Program.cs",
+              "ToolTip": "I:\\PRJ\\Asp .net\\U4\\U4.API\\Program.cs",
+              "RelativeToolTip": "U4.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T03:48:41.014Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

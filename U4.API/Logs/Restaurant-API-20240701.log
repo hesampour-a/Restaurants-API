@@ -1,0 +1,284 @@
+2024-07-01 08:10:28.641 +03:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-07-01 08:10:28.804 +03:30 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2024-07-01 08:10:28.819 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-01 08:10:31.187 +03:30 [INF] Executed DbCommand (113ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-01 08:10:31.857 +03:30 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-07-01 08:10:31.917 +03:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-07-01 08:10:31.991 +03:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = N'admin3@test.com') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-07-01 08:10:32.650 +03:30 [INF] Executed DbCommand (82ms) [Parameters=[@p0='8e8f7eae-90f9-434d-a77f-ff158a724c65' (Nullable = false) (Size = 450), @p1='0', @p2=NULL (DbType = Date), @p3='e6123ed6-233a-4dba-93a5-5f068b720a2a' (Size = 4000), @p4='admin3@test.com' (Size = 256), @p5='False', @p6='False', @p7=NULL (DbType = DateTimeOffset), @p8=NULL (Size = 4000), @p9='ADMIN3@TEST.COM' (Size = 256), @p10='ADMIN3' (Size = 256), @p11='AQAAAAIAAYagAAAAEJWx0x9G/1FaBhgH86izHxL5eC/9CQYz0bARetHM459gTjw8SqA7RtQFKnw6FY2k/Q==' (Size = 4000), @p12=NULL (Size = 4000), @p13='False', @p14='dbd81789-3d14-4e81-a174-ab9a601cd3c8' (Size = 4000), @p15='False', @p16='admin3' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [BirthDate], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [Nationality], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2024-07-01 08:10:32.752 +03:30 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='ADMIN3@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-01 08:10:32.796 +03:30 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedRoleName_0='ADMIN' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-01 08:10:32.918 +03:30 [INF] Executed DbCommand (29ms) [Parameters=[@__p_0='8e8f7eae-90f9-434d-a77f-ff158a724c65' (Size = 450), @__p_1='71974557-3440-4849-9fc0-50695c0bdad2' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2024-07-01 08:10:32.936 +03:30 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedRoleName_0='ADMIN' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-01 08:10:32.976 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='ADMIN3' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-01 08:10:33.109 +03:30 [INF] Executed DbCommand (22ms) [Parameters=[@p0='71974557-3440-4849-9fc0-50695c0bdad2' (Nullable = false) (Size = 450), @p1='8e8f7eae-90f9-434d-a77f-ff158a724c65' (Nullable = false) (Size = 450), @p18='8e8f7eae-90f9-434d-a77f-ff158a724c65' (Nullable = false) (Size = 450), @p2='0', @p3=NULL (DbType = Date), @p4='814160f9-0b39-4a9d-8fa9-53d4b1ac71d9' (Size = 4000), @p19='e6123ed6-233a-4dba-93a5-5f068b720a2a' (Size = 4000), @p5='admin3@test.com' (Size = 256), @p6='False', @p7='False', @p8=NULL (DbType = DateTimeOffset), @p9=NULL (Size = 4000), @p10='ADMIN3@TEST.COM' (Size = 256), @p11='ADMIN3' (Size = 256), @p12='AQAAAAIAAYagAAAAEJWx0x9G/1FaBhgH86izHxL5eC/9CQYz0bARetHM459gTjw8SqA7RtQFKnw6FY2k/Q==' (Size = 4000), @p13=NULL (Size = 4000), @p14='False', @p15='dbd81789-3d14-4e81-a174-ab9a601cd3c8' (Size = 4000), @p16='False', @p17='admin3' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [BirthDate] = @p3, [ConcurrencyStamp] = @p4, [Email] = @p5, [EmailConfirmed] = @p6, [LockoutEnabled] = @p7, [LockoutEnd] = @p8, [Nationality] = @p9, [NormalizedEmail] = @p10, [NormalizedUserName] = @p11, [PasswordHash] = @p12, [PhoneNumber] = @p13, [PhoneNumberConfirmed] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2024-07-01 08:11:21.162 +03:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 1751.9485 ms
+2024-07-01 08:12:03.908 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='ADMIN3@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-01 08:12:03.945 +03:30 [INF] HTTP POST /api/identity/login responded 401 in 82.9917 ms
+2024-07-01 08:13:10.616 +03:30 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedUserName_0='ADMIN3@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-01 08:13:10.622 +03:30 [INF] HTTP POST /api/identity/login responded 401 in 98.3876 ms
+2024-07-01 08:15:50.830 +03:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-07-01 08:15:50.910 +03:30 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2024-07-01 08:15:50.923 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-01 08:15:51.540 +03:30 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-01 08:15:51.950 +03:30 [INF] Executed DbCommand (70ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-07-01 08:15:51.982 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-07-01 08:15:52.050 +03:30 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = N'admin4@test.com') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-07-01 08:15:52.518 +03:30 [INF] Executed DbCommand (190ms) [Parameters=[@p0='ed5ff7a4-aa46-4240-80b4-e2efb7ae64e1' (Nullable = false) (Size = 450), @p1='0', @p2=NULL (DbType = Date), @p3='989b841e-8ef6-4f2a-bc6b-8bd8a6c19d9c' (Size = 4000), @p4='admin4@test.com' (Size = 256), @p5='False', @p6='False', @p7=NULL (DbType = DateTimeOffset), @p8=NULL (Size = 4000), @p9='ADMIN4@TEST.COM' (Size = 256), @p10='ADMIN4@TEST.COM' (Size = 256), @p11='AQAAAAIAAYagAAAAEIi5YEMNaceYIS9C/Igi9kOmGCMCmZMYmtlOYMrg2eoteGZQUAUs74CAreB1XaTllA==' (Size = 4000), @p12=NULL (Size = 4000), @p13='False', @p14='b3493350-cc66-4886-962e-733b329d5d50' (Size = 4000), @p15='False', @p16='admin4@test.com' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [BirthDate], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [Nationality], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2024-07-01 08:15:52.577 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='ADMIN4@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-01 08:15:52.679 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedRoleName_0='ADMIN' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-01 08:15:52.728 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='ed5ff7a4-aa46-4240-80b4-e2efb7ae64e1' (Size = 450), @__p_1='71974557-3440-4849-9fc0-50695c0bdad2' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2024-07-01 08:15:52.740 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='ADMIN' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-01 08:15:52.769 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='ADMIN4@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-01 08:15:52.824 +03:30 [INF] Executed DbCommand (13ms) [Parameters=[@p0='71974557-3440-4849-9fc0-50695c0bdad2' (Nullable = false) (Size = 450), @p1='ed5ff7a4-aa46-4240-80b4-e2efb7ae64e1' (Nullable = false) (Size = 450), @p18='ed5ff7a4-aa46-4240-80b4-e2efb7ae64e1' (Nullable = false) (Size = 450), @p2='0', @p3=NULL (DbType = Date), @p4='aa7492e7-5b90-432f-9dbb-b8393951ba9b' (Size = 4000), @p19='989b841e-8ef6-4f2a-bc6b-8bd8a6c19d9c' (Size = 4000), @p5='admin4@test.com' (Size = 256), @p6='False', @p7='False', @p8=NULL (DbType = DateTimeOffset), @p9=NULL (Size = 4000), @p10='ADMIN4@TEST.COM' (Size = 256), @p11='ADMIN4@TEST.COM' (Size = 256), @p12='AQAAAAIAAYagAAAAEIi5YEMNaceYIS9C/Igi9kOmGCMCmZMYmtlOYMrg2eoteGZQUAUs74CAreB1XaTllA==' (Size = 4000), @p13=NULL (Size = 4000), @p14='False', @p15='b3493350-cc66-4886-962e-733b329d5d50' (Size = 4000), @p16='False', @p17='admin4@test.com' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [BirthDate] = @p3, [ConcurrencyStamp] = @p4, [Email] = @p5, [EmailConfirmed] = @p6, [LockoutEnabled] = @p7, [LockoutEnd] = @p8, [Nationality] = @p9, [NormalizedEmail] = @p10, [NormalizedUserName] = @p11, [PasswordHash] = @p12, [PhoneNumber] = @p13, [PhoneNumberConfirmed] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2024-07-01 08:16:18.712 +03:30 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedUserName_0='ADMIN4@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-01 08:16:18.856 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[@__user_Id_0='ed5ff7a4-aa46-4240-80b4-e2efb7ae64e1' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2024-07-01 08:16:18.894 +03:30 [INF] Executed DbCommand (10ms) [Parameters=[@__userId_0='ed5ff7a4-aa46-4240-80b4-e2efb7ae64e1' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-07-01 08:16:18.909 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='ADMIN' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-01 08:16:18.927 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[@__role_Id_0='71974557-3440-4849-9fc0-50695c0bdad2' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2024-07-01 08:16:18.960 +03:30 [INF] HTTP POST /api/identity/login responded 200 in 306.0013 ms
+2024-07-01 08:17:45.409 +03:30 [INF] HTTP GET /gen204 responded 404 in 5.0488 ms
+2024-07-01 08:18:13.327 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='EMAIL@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-01 08:18:13.339 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='USER' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-01 08:18:13.345 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='USER' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-01 08:18:13.354 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='7d8aa40a-271e-4f26-a6a4-55c6427a6cfc' (Size = 450), @__p_1='f54c9b08-0b68-4e33-b201-af05f11e5cb6' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2024-07-01 08:18:13.358 +03:30 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='USER' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-01 08:18:13.364 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='EMAIL@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-01 08:18:13.376 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='f54c9b08-0b68-4e33-b201-af05f11e5cb6' (Nullable = false) (Size = 450), @p1='7d8aa40a-271e-4f26-a6a4-55c6427a6cfc' (Nullable = false) (Size = 450), @p18='7d8aa40a-271e-4f26-a6a4-55c6427a6cfc' (Nullable = false) (Size = 450), @p2='0', @p3=NULL (DbType = Date), @p4='e0a657f1-c9ee-4073-bfa7-d8ddb98c50e6' (Size = 4000), @p19='90815b1c-b920-4149-b812-97cfd0989477' (Size = 4000), @p5='email@test.com' (Size = 256), @p6='False', @p7='True', @p8=NULL (DbType = DateTimeOffset), @p9=NULL (Size = 4000), @p10='EMAIL@TEST.COM' (Size = 256), @p11='EMAIL@TEST.COM' (Size = 256), @p12='AQAAAAIAAYagAAAAEOEb4jrGtk/G08eXv1MPC+Ed+sudMNmzE1+AucfAelJReP0WGnc4cKHFy98jPHbdOA==' (Size = 4000), @p13=NULL (Size = 4000), @p14='False', @p15='3LK6NXY63H4HPID6ATFTMQNYFJ4VQYW4' (Size = 4000), @p16='False', @p17='email@test.com' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [BirthDate] = @p3, [ConcurrencyStamp] = @p4, [Email] = @p5, [EmailConfirmed] = @p6, [LockoutEnabled] = @p7, [LockoutEnd] = @p8, [Nationality] = @p9, [NormalizedEmail] = @p10, [NormalizedUserName] = @p11, [PasswordHash] = @p12, [PhoneNumber] = @p13, [PhoneNumberConfirmed] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2024-07-01 08:18:13.391 +03:30 [INF] HTTP POST /api/Identity/userRole responded 204 in 180.7815 ms
+2024-07-01 08:32:42.320 +03:30 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2024-07-01 08:32:42.452 +03:30 [WRN] The entity type 'Address' is an optional dependent using table sharing without any required non shared property that could be used to identify whether the entity exists. If all nullable properties contain a null value in database then an object instance won't be created in the query. Add a required property to create instances with null values for other properties or mark the incoming navigation as required to always create an instance.
+2024-07-01 08:32:42.464 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-07-01 08:32:43.361 +03:30 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-07-01 08:32:43.784 +03:30 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-07-01 08:32:43.819 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetRoles] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-07-01 08:32:43.864 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = N'admin4@test.com') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-07-01 08:32:44.442 +03:30 [INF] HTTP GET /swagger/index.html responded 200 in 182.9252 ms
+2024-07-01 08:32:44.831 +03:30 [INF] HTTP GET /swagger/favicon-32x32.png responded 304 in 24.5681 ms
+2024-07-01 08:32:45.000 +03:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 201.2009 ms
+2024-07-01 08:33:45.281 +03:30 [INF] Removing Role from User
+2024-07-01 08:33:46.975 +03:30 [INF] Executed DbCommand (27ms) [Parameters=[@__normalizedEmail_0='EMAIL@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-01 08:33:47.080 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='USER' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-01 08:33:47.102 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='USER' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-01 08:33:47.151 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='7d8aa40a-271e-4f26-a6a4-55c6427a6cfc' (Size = 450), @__p_1='f54c9b08-0b68-4e33-b201-af05f11e5cb6' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2024-07-01 08:33:47.270 +03:30 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedRoleName_0='USER' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-01 08:33:47.308 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='EMAIL@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-01 08:33:47.469 +03:30 [INF] Executed DbCommand (17ms) [Parameters=[@p0='f54c9b08-0b68-4e33-b201-af05f11e5cb6' (Nullable = false) (Size = 450), @p1='7d8aa40a-271e-4f26-a6a4-55c6427a6cfc' (Nullable = false) (Size = 450), @p18='7d8aa40a-271e-4f26-a6a4-55c6427a6cfc' (Nullable = false) (Size = 450), @p2='0', @p3=NULL (DbType = Date), @p4='17e15fb7-2ac6-46a5-b760-de323f7d70fa' (Size = 4000), @p19='e0a657f1-c9ee-4073-bfa7-d8ddb98c50e6' (Size = 4000), @p5='email@test.com' (Size = 256), @p6='False', @p7='True', @p8=NULL (DbType = DateTimeOffset), @p9=NULL (Size = 4000), @p10='EMAIL@TEST.COM' (Size = 256), @p11='EMAIL@TEST.COM' (Size = 256), @p12='AQAAAAIAAYagAAAAEOEb4jrGtk/G08eXv1MPC+Ed+sudMNmzE1+AucfAelJReP0WGnc4cKHFy98jPHbdOA==' (Size = 4000), @p13=NULL (Size = 4000), @p14='False', @p15='3LK6NXY63H4HPID6ATFTMQNYFJ4VQYW4' (Size = 4000), @p16='False', @p17='email@test.com' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [AspNetUserRoles]
+OUTPUT 1
+WHERE [RoleId] = @p0 AND [UserId] = @p1;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [BirthDate] = @p3, [ConcurrencyStamp] = @p4, [Email] = @p5, [EmailConfirmed] = @p6, [LockoutEnabled] = @p7, [LockoutEnd] = @p8, [Nationality] = @p9, [NormalizedEmail] = @p10, [NormalizedUserName] = @p11, [PasswordHash] = @p12, [PhoneNumber] = @p13, [PhoneNumberConfirmed] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+2024-07-01 08:33:47.502 +03:30 [INF] HTTP DELETE /api/Identity/userRole responded 204 in 2308.5128 ms
+2024-07-01 08:33:53.592 +03:30 [INF] Removing Role from User
+2024-07-01 08:33:53.676 +03:30 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedEmail_0='EMAIL@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-01 08:33:53.694 +03:30 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='USER' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-01 08:33:53.712 +03:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedRoleName_0='USER' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-01 08:33:53.729 +03:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='7d8aa40a-271e-4f26-a6a4-55c6427a6cfc' (Size = 450), @__p_1='f54c9b08-0b68-4e33-b201-af05f11e5cb6' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2024-07-01 08:33:53.745 +03:30 [INF] HTTP DELETE /api/Identity/userRole responded 204 in 159.7458 ms
+2024-07-01 08:34:02.594 +03:30 [INF] Removing Role from User
+2024-07-01 08:34:02.609 +03:30 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedEmail_0='EMAIL@TEST.COM' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[BirthDate], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Nationality], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-01 08:34:02.617 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='ADMIN' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-01 08:34:02.633 +03:30 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedRoleName_0='ADMIN' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-01 08:34:02.645 +03:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='7d8aa40a-271e-4f26-a6a4-55c6427a6cfc' (Size = 450), @__p_1='71974557-3440-4849-9fc0-50695c0bdad2' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @__p_0 AND [a].[RoleId] = @__p_1
+2024-07-01 08:34:02.649 +03:30 [INF] HTTP DELETE /api/Identity/userRole responded 204 in 69.3844 ms

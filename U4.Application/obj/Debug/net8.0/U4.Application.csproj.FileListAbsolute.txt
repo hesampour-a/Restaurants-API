@@ -1,0 +1,15 @@
+I:\PRJ\Asp .net\U4\U4.Application\bin\Debug\net8.0\U4.Application.deps.json
+I:\PRJ\Asp .net\U4\U4.Application\bin\Debug\net8.0\U4.Application.dll
+I:\PRJ\Asp .net\U4\U4.Application\bin\Debug\net8.0\U4.Application.pdb
+I:\PRJ\Asp .net\U4\U4.Application\bin\Debug\net8.0\U4.Domain.dll
+I:\PRJ\Asp .net\U4\U4.Application\bin\Debug\net8.0\U4.Domain.pdb
+I:\PRJ\Asp .net\U4\U4.Application\obj\Debug\net8.0\U4.Application.csproj.AssemblyReference.cache
+I:\PRJ\Asp .net\U4\U4.Application\obj\Debug\net8.0\U4.Application.GeneratedMSBuildEditorConfig.editorconfig
+I:\PRJ\Asp .net\U4\U4.Application\obj\Debug\net8.0\U4.Application.AssemblyInfoInputs.cache
+I:\PRJ\Asp .net\U4\U4.Application\obj\Debug\net8.0\U4.Application.AssemblyInfo.cs
+I:\PRJ\Asp .net\U4\U4.Application\obj\Debug\net8.0\U4.Application.csproj.CoreCompileInputs.cache
+I:\PRJ\Asp .net\U4\U4.Application\obj\Debug\net8.0\U4.Appli.546E6F6B.Up2Date
+I:\PRJ\Asp .net\U4\U4.Application\obj\Debug\net8.0\U4.Application.dll
+I:\PRJ\Asp .net\U4\U4.Application\obj\Debug\net8.0\refint\U4.Application.dll
+I:\PRJ\Asp .net\U4\U4.Application\obj\Debug\net8.0\U4.Application.pdb
+I:\PRJ\Asp .net\U4\U4.Application\obj\Debug\net8.0\ref\U4.Application.dll

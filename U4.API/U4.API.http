@@ -1,0 +1,72 @@
+@U4.API_HostAddress = https://localhost:7117
+@UAPI= https://localhost:7117
+@token =  CfDJ8Fn5zquT751CrWD9ckVg8PkDkALl56Nahe1BlyfBdCCqqlaGfyfj_IIggkL_Uc5CKTPyPPZIZeCZm4dfWNCMz8hVZhNf-zcXchssk8rUEGSu2D2Fn6ixlQ-SuNtPKXpxMj0ytZl_m3G7-RdznYg_xZngTTpR488lLfYlmOrjI7d-pFD62UugXh4FnHChHL0SpbQA2_9OgE5AEHyLETLEqHJJSOrXCY-Wiegw4Z1lx5bXshHlhs5B-JHhSIPP8gI1DZ4YGnh_S08-iGTdGHakVOr_TsyEdOobhS-72qa9R0KIEtz9AHVV7rkJqPDaAkfrvzvM0BHhGE056OY1n8zReExLzGCMpObPgI9fc8MaqUzKfQzHoEGUX2wyTHN07tLO73xv0j56BNjz9YFCbGvPjkyx_c3ouHk5nQ4oJ6uG4L2HPaSuk2K1zXFPGX-9pTnUNdw-u5lFdDCrFosK06AqeclS9JX_P2BsXfj2dr5Z3uVt5H9h6YgnmWNGyUzmofcdvbE-UiNNFkAg-1DEmj50sLWw4LIiSH7hX_niSG6zGFKsCshej_LYmUjw4hk6T5EUjPZcGSqoYtDlEU7xsu7otndBIufMXXnjo7JOL7vOm03RMwArJrj5MfXqCwtAjSz_KxKd0ZM2Pxj-5KzeMqYDiSAoTXFYWZgZr5HdCT98Bs6mgqZ43qvmrg9GFsN9xjYseA
+###
+
+GET https://localhost:7117/api/restaurant
+Authorization : Bearer CfDJ8Fn5zquT751CrWD9ckVg8PkDkALl56Nahe1BlyfBdCCqqlaGfyfj_IIggkL_Uc5CKTPyPPZIZeCZm4dfWNCMz8hVZhNf-zcXchssk8rUEGSu2D2Fn6ixlQ-SuNtPKXpxMj0ytZl_m3G7-RdznYg_xZngTTpR488lLfYlmOrjI7d-pFD62UugXh4FnHChHL0SpbQA2_9OgE5AEHyLETLEqHJJSOrXCY-Wiegw4Z1lx5bXshHlhs5B-JHhSIPP8gI1DZ4YGnh_S08-iGTdGHakVOr_TsyEdOobhS-72qa9R0KIEtz9AHVV7rkJqPDaAkfrvzvM0BHhGE056OY1n8zReExLzGCMpObPgI9fc8MaqUzKfQzHoEGUX2wyTHN07tLO73xv0j56BNjz9YFCbGvPjkyx_c3ouHk5nQ4oJ6uG4L2HPaSuk2K1zXFPGX-9pTnUNdw-u5lFdDCrFosK06AqeclS9JX_P2BsXfj2dr5Z3uVt5H9h6YgnmWNGyUzmofcdvbE-UiNNFkAg-1DEmj50sLWw4LIiSH7hX_niSG6zGFKsCshej_LYmUjw4hk6T5EUjPZcGSqoYtDlEU7xsu7otndBIufMXXnjo7JOL7vOm03RMwArJrj5MfXqCwtAjSz_KxKd0ZM2Pxj-5KzeMqYDiSAoTXFYWZgZr5HdCT98Bs6mgqZ43qvmrg9GFsN9xjYseA
+
+###
+
+GET https://localhost:7117/api/restaurant/50
+
+###
+
+POST https://localhost:7117/api/restaurant/
+Content-Type: application/json
+
+{
+  "Name": "test1",
+  "Description": "test1",
+  "Category": "test1",
+  "HasDelivery": true,
+  "ContactEmail": "test1",
+  "ContactNumber": "test1",
+  "Street": "test1",
+  "City": "test1",
+  "PostalCode": "test1"
+    
+  
+}
+
+###
+DELETE https://localhost:7117/api/restaurant/3
+
+###
+
+PUT https://localhost:7117/api/restaurant/5
+Content-Type: application/json
+
+{
+  "Name": "test2",
+  "Description": "test13",
+  "Category": "test155",
+  "HasDelivery": false,
+  "ContactEmail": "test12",
+  "ContactNumber": "test15",
+  "Street": "test18",
+  "City": "test17",
+  "PostalCode": "test14"
+}
+
+###
+
+POST https://localhost:7117/register
+content-type: application/json
+
+{
+  "email" : "email@test.com",
+  "password" : "P@ssword1"
+}
+
+
+
+
+POST {{U4.API_HostAddress}}/api/identity/userRole
+Content-Type: application/json
+
+{
+  //AssignUserRoleCommand
+}
+
+###
